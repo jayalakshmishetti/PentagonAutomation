@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="GroupSuite">
+  <test thread-count="5" name="Test">
+  	<groups>
+  		<run>
+  			/* <include name="Smoke"></include>			<include name="System"></include>
+  			<include name="Integration"></include>
+  			<include name="Functional"></include> */
+  			<exclude name="Smoke"></exclude>
+  		</run>
+  	</groups>
+    <classes>
+      <class name="TestNGExcecution.DominosLaunch"/>
+      <class name="TestNGExcecution.OlafoodsLaunch"/>
+      <class name="TestNGExcecution.SwiggyLaunch"/>
+      <class name="TestNGExcecution.ZomatoLaunch"/>
+      <class name="TestNGExcecution.KFCLaunch"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- GroupSuite -->
